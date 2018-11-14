@@ -39,7 +39,7 @@ def verbatim_tags(parser, token, endtagname):
             text_and_nodes.append('{{')
             text_and_nodes.append(token.contents)
 
-        elif token.token_type == template.base.TokenType.Text:
+        elif token.token_type == template.base.TokenType.TEXT:
             text_and_nodes.append(token.contents)
 
         elif token.token_type == template.base.TokenType.BLOCK:
