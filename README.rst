@@ -3,6 +3,7 @@ CREDITS
 =======
 
 ALL CREDITS GO TO THE ORIGINAL CREATORS.
+
 https://github.com/makinacorpus/
 
 https://github.com/makinacorpus/django-templatetag-handlebars
