@@ -1,4 +1,21 @@
-*django-templatetag-handlebars* allows you to embed `Handlebars.js <http://handlebarsjs.com>`_ 
+=======
+CREDITS
+=======
+
+ALL CREDITS GO TO THE ORIGINAL CREATORS.
+https://github.com/makinacorpus/
+https://github.com/makinacorpus/django-templatetag-handlebars
+https://pypi.org/project/django-templatetag-handlebars/
+
+
+==========
+Disclaimer
+==========
+This Repo is used to make Django handlebars work with Django2.1
+The pip install django-tempaltetag-handlebars
+
+
+*django-templatetag-handlebars* allows you to embed `Handlebars.js <http://handlebarsjs.com>`_
 templates in your django templates.
 
 Most of the template tag code comes from `Miguel Araujo's verbatim snippet <https://gist.github.com/893408>`_. 
@@ -9,7 +26,7 @@ INSTALL
 
 ::
 
-    pip install django-templatetag-handlebars
+    ~~pip install django-templatetag-handlebars~~
 
 =====
 USAGE
