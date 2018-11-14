@@ -1,4 +1,5 @@
 from django import template
+
 from django.conf import settings
 from django.utils import six
 
@@ -34,14 +35,14 @@ def verbatim_tags(parser, token, endtagname):
         if token.contents == endtagname:
             break
 
-        if token.token_type == template.base.TOKEN_VAR:
+        if token.token_type == template.base.TokenType.VAR:
             text_and_nodes.append('{{')
             text_and_nodes.append(token.contents)
 
-        elif token.token_type == template.base.TOKEN_TEXT:
+        elif token.token_type == template.base.TokenType.Text:
             text_and_nodes.append(token.contents)
 
-        elif token.token_type == template.base.TOKEN_BLOCK:
+        elif token.token_type == template.base.TokenType.BLOCK:
             try:
                 command = token.contents.split()[0]
             except IndexError:
