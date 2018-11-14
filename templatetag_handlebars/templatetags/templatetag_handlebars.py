@@ -59,7 +59,7 @@ def verbatim_tags(parser, token, endtagname):
                     raise
             text_and_nodes.append(node)
 
-        if token.token_type == template.base.TOKEN_VAR:
+        if token.token_type == template.base.TokenType.VAR:
             text_and_nodes.append('}}')
 
     return text_and_nodes
